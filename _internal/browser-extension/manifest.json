@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "OF Saver Browser Connection",
+  "version": "1.0.0",
+  "description": "Connect the active OnlyFans session to your local OF Saver profile after explicit approval.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA20Ih4hZuBV3ktqD14yI8yLwQrNesMIfNoM/RmPFFpKwF0Q9jua1in7SXggj++UfOktY1GK6DjQ2Az/mogB6Q2bKatkvlW842uLgVghbsq3ZkfHak+8WBzadVDquiMxbaKVAOjiGd7oXHvpRkQI7p3Ut+XbbVZa2IBvWMSfN/A1SFD0wVO0AkLJ7vEijz2rIrrB4JTIiq/VK4mQIf1QpKF8BEXvgcj72o19sQu5r8s2cHblB/oaO8zjKQOPvT99HyW4Hgw42QwotHuOZVgEazb2eJF1fWCQUzn6dx44ocuEqwKxzkm3LCyJwaMBhTpev5NK8RTCGUukOMclliAHKLUQIDAQAB",
+  "permissions": [
+    "activeTab",
+    "cookies",
+    "webRequest",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "https://onlyfans.com/*",
+    "https://www.onlyfans.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Connect to OF Saver",
+    "default_popup": "popup.html"
+  }
+}
